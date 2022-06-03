@@ -234,12 +234,12 @@ for (const producto of productos)
 
 // ----- Contructor de clases ----- //
 class Cake {
-    constructor(cake) {
-        this.id = cake.id;
-        this.nombre = cake.nombre;
-        this.precio = cake.precio;
+    constructor(viaje) {
+        this.id = viaje.id;
+        this.nombre = viaje.nombre;
+        this.precio = viaje.precio;
         this.cantidad = 1;
-        this.precioTotal = cake.precio;
+        this.precioTotal = viaje.precio;
     }
 
     agregarUnidad() {
@@ -258,112 +258,47 @@ class Cake {
 // ----- Variables ----- //
 const cakes = [{
         id: 0,
-        nombre: "Lemon Pie",
-        descripcion: "Torta de limon con merengue italiano",
-        precio: 990,
+        nombre: "España",
+        descripcion: "7 dias en España",
+        precio: 880,
     },
     {
         id: 1,
-        nombre: "Cheese cake",
-        descripcion: "Torta de mouse de queso con frutos rojos",
+        nombre: "Francia",
+        descripcion: "8 dias en Francia",
         precio: 1100,
     },
     {
         id: 2,
-        nombre: "Chocomouse",
-        descripcion: "Torta de bizcochuelo con mouse de chocolate y nutella",
+        nombre: "Turquia y Grecia",
+        descripcion: "5 dias en Turquia y 6 en Grecia",
         precio: 1500,
     },
     {
         id: 3,
-        nombre: "Choco en rama",
-        descripcion: "Torta con chantilly y chocolate en rama",
+        nombre: "Vietnam",
+        descripcion: "10 dias en Vietnam",
         precio: 1300,
     },
     {
         id: 4,
-        nombre: "Frutos rojos y chocolate",
-        descripcion: "Mouse de chocolate blanco con una ganache de chocolate negro y frutos rojos",
+        nombre: "China",
+        descripcion: "12 dias en china",
         precio: 1200,
     },
     {
         id: 5,
-        nombre: "Torta Caramelo",
-        descripcion: "Torta con base de caramelo",
+        nombre: "Cancun",
+        descripcion: "7 dias en canun all in clusive",
         precio: 1050,
     },
     {
         id: 6,
-        nombre: "Macarron cake",
-        descripcion: "Torta con toppings de macarons",
+        nombre: "Brasil",
+        descripcion: "7 dias en Brasil",
         precio: 1500,
     },
-    {
-        id: 7,
-        nombre: "Strawberry and cream",
-        descripcion: "Torta con base de bizcochuelo, con butter cream y frutillas ",
-        precio: 890,
-    },
-    {
-        id: 8,
-        nombre: "Arcoiris",
-        descripcion: "Torta con base de de bizcochuelo de colores pasteles",
-        precio: 1500,
-    },
-    {
-        id: 9,
-        nombre: "Primavera",
-        descripcion: "Torta con butter cream y flores comestibles",
-        precio: 1200,
-    },
-    {
-        id: 10,
-        nombre: "Torta menta",
-        descripcion: "Torta de chocolate y menta",
-        precio: 990,
-    },
-    {
-        id: 11,
-        nombre: "Macarron gigante",
-        descripcion: "Macarron gigante con frutos del bosque",
-        precio: 890,
-    },
-    {
-        id: 12,
-        nombre: "Red Velvet",
-        descripcion: "Bizcochuelo rojo con butter cream y frutos del bosque",
-        precio: 1200,
-    },
-    {
-        id: 13,
-        nombre: "Arandanos",
-        descripcion: "Bizcochuelo relleno de duce de leche con una butter cream de arandanos",
-        precio: 1400,
-    },
-    {
-        id: 14,
-        nombre: "Kit Kat",
-        descripcion: "Bizcochuelo relleno de duce de leche con Kit Kat",
-        precio: 1400,
-    },
-    {
-        id: 15,
-        nombre: "Oreo",
-        descripcion: "Bizcochuelo relleno de duce de leche con butter cream y oreos",
-        precio: 1400,
-    },
-    {
-        id: 16,
-        nombre: "Torta citrica",
-        descripcion: "Bizcochuelo relleno de mouse de naranja con butter cream naranja y crema inglesa",
-        precio: 1050,
-    },
-    {
-        id: 17,
-        nombre: "Reversion de lemon pie",
-        descripcion: "Bizcochuelo relleno de crema pastelera de limon con merengue italiano flambeado",
-        precio: 950,
-    },
+
 
 ];
 
@@ -380,7 +315,7 @@ function menuDeCompras() {
     }
 
     let idProducto = prompt(`
-    Escriba el número de cakes que desea comprar, o escriba 'terminar' para finalizar
+    Escriba el número de paquete de viaje que desea comprar, o escriba 'terminar' para finalizar
     ${stringProductos} \n`);
 
     while (idProducto !== "terminar") {
