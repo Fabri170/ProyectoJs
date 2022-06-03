@@ -1,0 +1,131 @@
+@import"./views/contacto.scss";
+@import"./views/vuelos.scss";
+@import"./views/ofertas.scss";
+@import"./views/hoteles.scss";
+@import"./views/traslados.scss";
+@import"./views/galeria.scss";
+@import"./views/index.scss";
+@import "./views/galeria.scss";
+@import"./layout/header.scss";
+@import"./layout/footer.scss";
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,900');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FEFFFF;
+    font-family: 'Raleway', sans-serif;
+}
+
+*::selection {
+    outline: none;
+}
+
+@media screen and (max-width: 950px) {
+    .portafolio-container {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .portafolio-item {
+        width: 80%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .photo p {
+        width: 90%;
+    }
+    .grand-title {
+        width: 90%;
+    }
+    .text {
+        flex-direction: column;
+    }
+    .inner-content {
+        flex-flow: column wrap;
+    }
+    .boxy:nth-child(1),
+    .boxy:nth-child(2) {
+        width: 90%;
+    }
+    /*GENERA PROBLEMA*/
+    .boxy:nth-child(1) {
+        padding: 10px;
+    }
+    #slider {
+        margin-left: -55px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+        color: #6D85A8;
+    }
+    #toggle:checked+.menu {
+        display: block;
+        background-color: #FEFFFF;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #slider {
+        margin-left: -55px;
+    }
+    .photo-text h4 {
+        font-size: 45px;
+    }
+    .inner-text {
+        width: 80%;
+    }
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+    20% {
+        left: 0;
+        opacity: 1;
+    }
+    25% {
+        left: -100%;
+        opacity: .8;
+    }
+    45% {
+        left: -100%;
+        opacity: .8;
+    }
+    50% {
+        left: -200%;
+        opacity: .7;
+    }
+    70% {
+        left: -200%;
+        opacity: .7;
+    }
+    75% {
+        left: -300%;
+        opacity: .6;
+    }
+    95% {
+        left: -400%;
+        opacity: .6;
+    }
+    100% {
+        left: -400%;
+        opacity: 1;
+    }
+}

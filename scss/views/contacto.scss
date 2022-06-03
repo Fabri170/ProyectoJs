@@ -1,0 +1,170 @@
+/*FOOTER*/
+
+.contact {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 500px;
+    width: 100%;
+}
+
+.contact h4 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    margin: 30px;
+    color: #354757;
+}
+
+.contact h4:after {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 3px;
+    margin: 20px auto;
+    border: 0;
+    background: #E58859;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container * {
+    box-sizing: border-box;
+}
+
+.flex-outer,
+.flex-inner {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flex-outer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-inner {
+    padding: 0 8px;
+    justify-content: space-between;
+}
+
+.flex-outer>li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.flex-outer li label {
+    padding: 8px;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+
+.flex-outer>li>label {
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+
+.flex-outer>li>label+*,
+.flex-inner {
+    flex: 1 0 220px;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+    padding: 15px;
+    resize: none;
+}
+
+.flex-outer li button {
+    background: 0 0 #FEFFFF;
+    border: 1px solid #6D85A8;
+    border-radius: 3px;
+    color: #6D85A8;
+    font-size: 16px;
+    line-height: inherit;
+    margin: 30px 0;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    transition: all 0.25s ease 0s;
+}
+
+.flex-outer li button:hover,
+.flex-outer li button:active,
+.flex-outer li button:focus {
+    border-color: #299FFF;
+    color: #299FFF;
+}
+
+.flex-inner li {
+    width: 100px;
+}
+
+.rect {
+    border-color: #6D85A8;
+    border-width: 0 0 1px 0;
+    border-style: none none solid none;
+    box-shadow: none;
+}
+
+.rect:focus {
+    box-shadow: none;
+    border-color: #60A9F1;
+    outline: none;
+}
+
+.center {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-outer li ::placeholder {
+    font-size: 12px;
+    color: #6D85A8;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.flex-outer li ::-webkit-input-placeholder {
+    font-size: 12px;
+    color: #6D85A8;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.flex-outer li ::-moz-placeholder {
+    font-size: 12px;
+    color: #6D85A8;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.flex-outer li ::-ms-input-placeholder {
+    font-size: 12px;
+    color: #6D85A8;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.flex-outer li ::-moz-placeholder {
+    font-size: 12px;
+    color: #6D85A8;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+input {
+    font-family: 'Raleway', sans-serif;
+}

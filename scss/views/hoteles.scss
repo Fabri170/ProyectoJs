@@ -1,0 +1,113 @@
+body {
+    background-color: #eee
+}
+
+.t-products {
+    background-image: linear-gradient(to right top, #5629c0, #5625cb, #5620d5, #551ae0, #5412eb);
+    color: #fff;
+    border-radius: 0.1875rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.processor {
+    background-color: #fff;
+    margin-top: 0.3125rem;
+    border-bottom: 0.0625rem solid #eee;
+    border: solid gray;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.brand {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    border: solid gray;
+    margin-top: 0.3rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.type {
+    background-color: #fff;
+    border: solid gray;
+    margin-top: 0.3rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.product {
+    padding: 0.625rem;
+    background-color: #fff;
+    border-radius: 0.3125rem;
+    position: relative;
+    border: solid gray;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.about span {
+    color: #5629c0;
+    font-size: 16px
+}
+
+.cart-button button {
+    font-size: 0.75rem;
+    color: #fff;
+    background-color: #5629c0;
+    height: 2.375rem
+}
+
+.cart-button button:focus,
+button:active {
+    font-size: 12px;
+    color: #fff;
+    background-color: #5629c0;
+    box-shadow: none
+}
+
+.product_fav i {
+    line-height: 2.5rem;
+    color: #5629c0;
+    font-size: 0.9375rem
+}
+
+.product_fav {
+    display: inline-block;
+    width: 2.25rem;
+    height: 2.4375rem;
+    background: #FFFFFF;
+    box-shadow: 0px 0.0625rem 0.3125rem rgba(0, 0, 0, 0.1);
+    border-radius: 11%;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 3px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease
+}
+
+.product_fav:hover {
+    background: #5629c0
+}
+
+.product_fav:hover i {
+    color: #fff
+}
+
+.about {
+    margin-top: 0.75rem
+}
+
+.off {
+    position: absolute;
+    left: 65%;
+    top: 6%;
+    width: 5rem;
+    text-align: center;
+    height: 1.875rem;
+    line-height: 0.5rem;
+    border-radius: 0.3125rem;
+    font-size: 0.8125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff
+}

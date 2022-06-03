@@ -1,0 +1,123 @@
+.card {
+    margin-top: 5rem;
+    width: 21.875rem;
+    height: 24rem;
+    border: none;
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    border-radius: 0.75rem
+}
+
+.circle-image img {
+    border-radius: 100%;
+    padding: 0px;
+    top: -1.75rem;
+    position: relative;
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 100%;
+    z-index: 1;
+    background: #e7d184;
+    cursor: pointer
+}
+
+.dot {
+    height: 18px;
+    width: 18px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: -48px;
+    left: 186px;
+    z-index: 1000
+}
+
+.name {
+    margin-top: -1.3125rem;
+    font-size: 1.125rem
+}
+
+.fw-500 {
+    font-weight: 500 !important
+}
+
+.start {
+    color: green
+}
+
+.stop {
+    color: red
+}
+
+.rate {
+    border-bottom-right-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+    position: relative;
+    width: 1em;
+    font-size: 1.875rem;
+    font-weight: 300;
+    color: #FFD600;
+    cursor: pointer
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+
+.buttons {
+    top: 36px;
+    position: relative
+}
+
+.rating-submit {
+    border-radius: 0.9375rem;
+    color: #fff;
+    height: 3.0625rem
+}
+
+.rating-submit:hover {
+    color: #fff
+}
+
+.hotel-estrellas {
+    margin-top: 10rem;
+    margin-left: 13rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 20rem;
+    width: 70rem;
+}
+
+.hotel {
+    font-size: 1.0rem;
+    padding-top: 7rem;
+    margin-left: 2rem;
+    width: 40rem;
+}
